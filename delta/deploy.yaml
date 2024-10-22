@@ -5,7 +5,7 @@ metadata:
   labels:
     app.kubernetes.io/name: configmap-sidecar-container
 spec:
-  replicas: 3
+  replicas: 2
   selector:
     matchLabels:
       app.kubernetes.io/name: configmap-sidecar-container

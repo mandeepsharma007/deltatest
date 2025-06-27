@@ -15,5 +15,6 @@ spec:
       containers:
       - name: ui-app
         image: localhost/delta-dental-ui:latest 
+        imagePullPolicy: Never
         ports:
         - containerPort: 80

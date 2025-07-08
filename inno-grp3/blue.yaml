@@ -10,7 +10,8 @@ spec:
   template:
     metadata:
       labels:
-        app: ui-app-v2
+        app: ui-app
+        instance: live
     spec:
       containers:
       - name: ui-app

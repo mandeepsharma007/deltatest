@@ -6,13 +6,13 @@ spec:
   replicas: 2
   selector:
     matchLabels:
-      app: ui-app-v2
-      instance: live
+      app: "ui-app-v2"
+      instance: "live"
   template:
     metadata:
       labels:
-        app: ui-app
-        instance: live
+        app: "ui-app"
+        instance: "live"
     spec:
       containers:
       - name: ui-app

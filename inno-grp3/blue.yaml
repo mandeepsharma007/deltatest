@@ -7,6 +7,7 @@ spec:
   selector:
     matchLabels:
       app: ui-app-v2
+      instance: live
   template:
     metadata:
       labels:

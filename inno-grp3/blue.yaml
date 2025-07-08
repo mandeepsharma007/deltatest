@@ -1,19 +1,19 @@
-# apiVersion: apps/v1
-# kind: Deployment
-# metadata:
-#   name: ui-app-v2
-# spec:
-#   replicas: 2
-#   selector:
-#     matchLabels:
-#       app: ui-app-v2
-#   template:
-#     metadata:
-#       labels:
-#         app: ui-app-v2
-#     spec:
-#       containers:
-#       - name: ui-app
-#         image: localhost/delta-dental-ui:v2 #gcr.io/google-samples/gb-frontend:v5
-#         ports:
-#         - containerPort: 80
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ui-app-v2
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: ui-app-v2
+  template:
+    metadata:
+      labels:
+        app: ui-app-v2
+    spec:
+      containers:
+      - name: ui-app
+        image: localhost/delta-dental-ui:v2 #gcr.io/google-samples/gb-frontend:v5
+        ports:
+        - containerPort: 80

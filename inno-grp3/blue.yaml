@@ -11,11 +11,11 @@ spec:
   template:
     metadata:
       labels:
-        app: "ui-app"
+        app: "ui-app-v2"      # <-- Fixed label to match selector
         instance: "live"
     spec:
       containers:
       - name: ui-app
-        image: localhost/delta-dental-ui:v2 #gcr.io/google-samples/gb-frontend:v5
+        image: localhost/delta-dental-ui:v2
         ports:
         - containerPort: 80

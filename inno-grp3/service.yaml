@@ -5,7 +5,7 @@ metadata:
 spec:
   selector:
     app: ui-app
-    instance: live 
+    #instance: live 
   ports:
   - protocol: TCP
     port: 80

@@ -6,12 +6,12 @@ spec:
   replicas: 2
   selector:
     matchLabels:
-      app: "ui-app"
+      app: "ui-app-v2"
       instance: "live"
   template:
     metadata:
       labels:
-        app: "ui-app"      # <-- Fixed label to match selector
+        app: "ui-app-v2"      # <-- Fixed label to match selector
         instance: "live"
     spec:
       containers:

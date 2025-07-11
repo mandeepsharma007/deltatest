@@ -1,21 +1,21 @@
-# apiVersion: apps/v1
-# kind: Deployment
-# metadata:
-#   name: ui-app-v2
-# spec:
-#   replicas: 2
-#   selector:
-#     matchLabels:
-#       app: "ui-app"
-#       instance: "live"
-#   template:
-#     metadata:
-#       labels:
-#         app: "ui-app"      # <-- Fixed label to match selector
-#         instance: "live"
-#     spec:
-#       containers:
-#       - name: ui-app
-#         image: localhost/delta-dental-ui:v2
-#         ports:
-#         - containerPort: 80
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ui-app-v2
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "ui-app"
+      instance: "live"
+  template:
+    metadata:
+      labels:
+        app: "ui-app"      # <-- Fixed label to match selector
+        instance: "live"
+    spec:
+      containers:
+      - name: ui-app
+        image: localhost/delta-dental-ui:v2
+        ports:
+        - containerPort: 80

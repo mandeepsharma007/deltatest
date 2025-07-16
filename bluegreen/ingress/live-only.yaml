@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: live-only
+spec:
+  selector:
+    app: "ui-app"
+    instance: "live"
+  ports:
+  - port: 80
+    targetPort: 80

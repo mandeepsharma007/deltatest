@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: ui-app
-        image: localhost/delta-dental-ui:latest #gcr.io/google-samples/gb-frontend:v5
+        image: localhost/delta-dental-ui:v2 #latest #gcr.io/google-samples/gb-frontend:v5
         ports:
         - containerPort: 80

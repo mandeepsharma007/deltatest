@@ -1,21 +1,21 @@
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: ui-app-blue
-spec:
-  replicas: 2
-  selector:
-    matchLabels:
-      app: "ui-app"
-  template:
-    metadata:
-      labels:
-        app: "ui-app"
-        instance: "live"
-        deployment: "blue"
-    spec:
-      containers:
-      - name: ui-app
-        image: localhost/delta-dental-ui:v2 #gcr.io/google-samples/gb-frontend:v5
-        ports:
-        - containerPort: 80
+# apiVersion: apps/v1
+# kind: Deployment
+# metadata:
+#   name: ui-app-blue
+# spec:
+#   replicas: 2
+#   selector:
+#     matchLabels:
+#       app: "ui-app"
+#   template:
+#     metadata:
+#       labels:
+#         app: "ui-app"
+#         instance: "live"
+#         deployment: "blue"
+#     spec:
+#       containers:
+#       - name: ui-app
+#         image: localhost/delta-dental-ui:v2 #gcr.io/google-samples/gb-frontend:v5
+#         ports:
+#         - containerPort: 80

@@ -6,11 +6,11 @@ spec:
   replicas: 2
   selector:
     matchLabels:
-      app: "ui-app-v2"
+      app: "ui-app"
   template:
     metadata:
       labels:
-        app: "ui-app-v2"
+        app: "ui-app"
         instance: "live"
         deployment: "blue"
     spec:

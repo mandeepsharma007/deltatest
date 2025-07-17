@@ -15,7 +15,7 @@ spec:
         deployment: "blue"
     spec:
       containers:
-      - name: ui-app
+      - name: ui-app-v2
         image: localhost/delta-dental-ui:v2 #gcr.io/google-samples/gb-frontend:v5
         ports:
         - containerPort: 80

@@ -6,7 +6,7 @@ spec:
   replicas: 2
   selector:
     matchLabels:
-      app: "ui-app"
+      app: "ui-app-v2"
   template:
     metadata:
       labels:
@@ -15,7 +15,7 @@ spec:
         deployment: "blue"
     spec:
       containers:
-      - name: ui-app-v2
+      - name: ui-app
         image: localhost/delta-dental-ui:v2 #gcr.io/google-samples/gb-frontend:v5
         ports:
         - containerPort: 80

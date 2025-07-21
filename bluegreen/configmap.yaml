@@ -7,4 +7,4 @@ data:
   application.properties: |
     property1=value1
     property2=value2
-    DB_URL=jdbc:mysql://dummy-host:3306/dummydb/config
+    DB_URL=jdbc:mysql://dummy-host:3306/dummydb

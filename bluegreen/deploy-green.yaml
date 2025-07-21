@@ -19,3 +19,11 @@ spec:
         image: localhost/delta-dental-ui:v2 #latest #gcr.io/google-samples/gb-frontend:v5
         ports:
         - containerPort: 80
+        volumeMounts:
+        - name: config-volume
+          mountPath: /config
+          # application.properties will be available at /config/application.properties
+      volumes:
+      - name: config-volume
+        configMap:
+          name: app-properties-config

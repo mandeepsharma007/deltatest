@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-properties-config
+  namespace: blue-green
+data:
+  application.properties: |
+    property1=value1
+    property2=value2
+    DB_URL=jdbc:mysql://dummy-host:3306/dummydb

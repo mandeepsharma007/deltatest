@@ -11,7 +11,7 @@ spec:
     metadata:
       labels:
         app: "ui-app"
-        instance: "live"
+        instance: "standby"
         deployment: "green"
     spec:
       containers:

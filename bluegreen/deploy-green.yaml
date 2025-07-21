@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: ui-app-green
 spec:
-  replicas: 0
+  replicas: 1
   selector:
     matchLabels:
       app: "ui-app"

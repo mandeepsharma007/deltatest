@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: ui-app-blue
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: "ui-app"

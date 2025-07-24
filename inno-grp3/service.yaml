@@ -4,7 +4,7 @@ metadata:
   name: ui-app-service
 spec:
   selector:
-    app: ui-app-u2
+    app: ui-app-v2
     #instance: live 
   ports:
   - protocol: TCP
